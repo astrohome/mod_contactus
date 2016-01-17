@@ -2,8 +2,8 @@
 <extension type="module" version="3.1.0" client="site" method="upgrade">
     <name>Contact Us</name>
     <author>astrohome</author>
-    <version>1.0.0</version>
-    <description>A simple Hello, World! module.</description>
+    <version>1.0.1</version>
+    <description>ContatUs Joomla module.</description>
     <files>
         <filename>mod_contactus.xml</filename>
         <filename module="mod_contactus">mod_contactus.php</filename>
