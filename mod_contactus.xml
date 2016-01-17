@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Contact Us</name>
+    <author>astrohome</author>
+    <version>1.0.0</version>
+    <description>A simple Hello, World! module.</description>
+    <files>
+        <filename>mod_contactus.xml</filename>
+        <filename module="mod_contactus">mod_contactus.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field type="spacer" name="captchaSpacer" label="&lt;hr/&gt;&lt;b&gt;Captcha&lt;/b&gt;" />
+                <field
+                    name="useCaptcha"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    label="Use reCaptcha"
+                    description="">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                    name="captchaServerKey"
+                    type="text"
+                    label="Secret key"
+                    description="">
+                </field>
+                <field
+                    name="captchaFrontKey"
+                    type="text"
+                    label="Site key"
+                    description="">
+                </field>
+                <field
+                    name="captchaUseClientIp"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    label="Use Client IP for verification"
+                    description="">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field type="spacer" name="visualSpacer" label="&lt;hr/&gt;&lt;b&gt;Look and feel&lt;/b&gt;" />
+                <field
+                    name="usePopup"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    label="Use popup"
+                    description="">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                    name="popupTitle"
+                    type="text"
+                    label="Popup title"
+                    description="">
+                </field>
+                <field
+                    name="btnPopupTitle"
+                    type="text"
+                    label="Popup link title"
+                    description="">
+                </field>
+                <field
+                    name="btnSubmitTitle"
+                    type="text"
+                    label="Submit button title"
+                    description="">
+                </field>
+                <field
+                    name="fldNameTitle"
+                    type="text"
+                    label="Name field label"
+                    description="">
+                </field>
+                <field
+                    name="fldEmailTitle"
+                    type="text"
+                    label="Email field label"
+                    description="">
+                </field>
+                <field
+                    name="fldMessageTitle"
+                    type="text"
+                    label="Message field label"
+                    description="">
+                </field>
+                <field
+                    name="fldCaptchaTitle"
+                    type="text"
+                    label="Captcha field label"
+                    description="">
+                </field>
+
+                <field type="spacer" name="emailSpacer" label="&lt;hr/&gt;&lt;b&gt;Email settings&lt;/b&gt;" />
+                <field
+                    name="mailSubject"
+                    type="text"
+                    label="Mail subject"
+                    description="">
+                </field>
+                <field
+                    name="mailRecipient"
+                    type="text"
+                    label="Send to"
+                    description="">
+                </field>
+
+                <field type="spacer" name="emailSpacer" label="&lt;hr/&gt;&lt;b&gt;Advances Look and Feel&lt;/b&gt;" />
+                <field
+                    name="btnSubmitStyle_backgroundColor"
+                    type="color"
+                    label="Submit background"
+                    description="">
+                </field>
+                <field
+                    name="btnSubmitStyle_bottomBackgroundColor"
+                    type="color"
+                    label="Submit bottom background"
+                    description="">
+                </field>
+                <field
+                    name="btnSubmitStyle_textColor"
+                    type="color"
+                    label="Submit button text"
+                    description="">
+                </field>
+                <field
+                    name="btnSubmitStyle_textShadow"
+                    type="color"
+                    label="Submit button text shadow"
+                    description="">
+                </field>
+                <field
+                    name="inpStyle_backgroundColor"
+                    type="color"
+                    label="Input's background color"
+                    description="">
+                </field>
+                <field
+                    name="inpStyle_borderColor"
+                    type="color"
+                    label="Input's border color"
+                    description="">
+                </field>
+                <field
+                    name="inpStyle_textColor"
+                    type="color"
+                    label="Input's text color"
+                    description="">
+                </field>
+                <field
+                    name="fldTitleStyle_textColor"
+                    type="color"
+                    label="Label's text color"
+                    description="">
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
