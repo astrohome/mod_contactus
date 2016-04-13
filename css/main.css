@@ -144,7 +144,7 @@
   border: solid 0px #cbc9c9;
 }
 
-#contactus input[type=text],input[type=email] {
+#contactus input[type=text], #contactus input[type=email] {
   width: 330px; 
   height: 39px; 
   -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
